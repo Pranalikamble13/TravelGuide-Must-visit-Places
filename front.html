@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Guide - Must Visit Places</h1>
+    </header>
+    <main>
+        <section>
+            <label for="districtSelect">Select District:</label>
+            <select id="districtSelect" onchange="showPlaces()">
+                <option value="">--Choose District--</option>
+                <option value="pune">Pune</option>
+                <option value="nashik">Nashik</option>
+                <option value="nagpur">Nagpur</option>
+            </select>
+        </section>
+
+        <section id="placesContainer"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
